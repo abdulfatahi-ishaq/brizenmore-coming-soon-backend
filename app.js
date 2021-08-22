@@ -25,7 +25,7 @@ app.post('/send-mail', (req, res) => {
   console.log(req.body);
   const mailOptions = {
     from: '"Admin", admin@premiumtrustfinancials.com',
-    to: 'abfatahi.iaf@gmail.com',
+    to: 'info@brizenmore.com',
     subject: 'New Subscriber',
     html: `
         <h2 style="font-size: 18px; color: #1ee0ac; font-weight: 600; margin: 0;">New Subscriber To Waitlist</h2>
