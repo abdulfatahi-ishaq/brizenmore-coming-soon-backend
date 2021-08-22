@@ -15,8 +15,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   secure: true,
   auth: {
-    user: process.env.user,
-    pass: process.env.password,
+    user: 'admin@premiumtrustfinancials.com',
+    pass: 'Admin@2021!',
   },
 });
 
@@ -25,7 +25,7 @@ app.post('/send-mail', (req, res) => {
   console.log(req.body);
   const mailOptions = {
     from: '"Admin", admin@premiumtrustfinancials.com',
-    to: process.env.mail,
+    to: 'abfatahi.iaf@gmail.com',
     subject: 'New Subscriber',
     html: `
         <h2 style="font-size: 18px; color: #1ee0ac; font-weight: 600; margin: 0;">New Subscriber To Waitlist</h2>
